@@ -12,7 +12,7 @@ export default function Home1() {
 							<span className="text-dark">👋 Hi there, I'm Vishnusaran</span>
 							<h1 className="ds-3 mb-4">Engineering Intuitive Solutions with <span className="text-primary-1">Clean &amp; Efficient Code</span></h1>
 							<p className="text-300 mb-6">I assist individuals and brands in achieving their objectives by creating and developing user-focused digital products and interactive experiences.</p>
-							<Link href="/assets/resume.pdf" className="btn btn-gradient me-2" target="_blank">
+							<Link href="/assets/resume/vishnusaran_cv.pdf" className="btn btn-gradient me-2" target="_blank">
 								Download CV
 								<i className="ri-download-line ms-2" />
 							</Link>
