@@ -42,23 +42,21 @@ export default function PortfolioFilter() {
 				<div className="text-start">
 					<div className="button-group filter-button-group filter-menu-active">
 						<button className={activeBtn("*")} onClick={handleFilterKeyChange("*")}>All Projects</button>
-						<button className={activeBtn("brand")} onClick={handleFilterKeyChange("brand")}>Branding</button>
-						<button className={activeBtn("webdesign")} onClick={handleFilterKeyChange("webdesign")}>Web Design</button>
-						<button className={activeBtn("ui")} onClick={handleFilterKeyChange("ui")}>UI/UX</button>
-						<button className={activeBtn("app")} onClick={handleFilterKeyChange("app")}>App Dev</button>
+						<button className={activeBtn("webapp")} onClick={handleFilterKeyChange("webapp")}>Web App Development</button>
+						<button className={activeBtn("mobileapp")} onClick={handleFilterKeyChange("mobileapp")}>Mobile App Development</button>
 					</div>
 				</div>
 				<div className="row masonry-active justify-content-between mt-6">
 					<div className="grid-sizer" />
-					<div className="filter-item col-lg-6 col-12 brand ui app">
+					<div className="filter-item col-lg-6 col-12 brand webapp app">
 						<div className="project-item rounded-4 overflow-hidden position-relative p-md-4 p-3 bg-white">
 							<Link href="/work-single">
-								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/img-1.png" alt="infinia" />
+								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/project-1.png" alt="infinia" />
 							</Link>
 							<div className="d-flex align-items-center mt-4">
 								<Link href="/work-single" className="project-card-content">
-									<h3 className="fw-semibold">Photo App UI/UX</h3>
-									<p>Bokeh network</p>
+									<h3 className="fw-semibold">Web App Development</h3>
+									<p>Donation Application</p>
 								</Link>
 								<Link href="/work-single" className="project-card-icon icon-shape ms-auto icon-md rounded-circle">
 									<i className="ri-arrow-right-up-line" />
@@ -66,15 +64,15 @@ export default function PortfolioFilter() {
 							</div>
 						</div>
 					</div>
-					<div className="filter-item col-lg-6 col-12 webdesign brand dataanalysis brand">
+					<div className="filter-item col-lg-6 col-12 webapp brand dataanalysis brand">
 						<div className="project-item rounded-4 overflow-hidden position-relative p-md-4 p-3 bg-white">
 							<Link href="/work-single">
-								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/img-2.png" alt="infinia" />
+								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/project-2.png" alt="infinia" />
 							</Link>
 							<div className="d-flex align-items-center mt-4">
 								<Link href="/work-single" className="project-card-content">
-									<h3 className="fw-semibold">Mobile App Design</h3>
-									<p>Tech Innovators Inc.</p>
+									<h3 className="fw-semibold">Web App Development</h3>
+									<p>Online Exam Application</p>
 								</Link>
 								<Link href="/work-single" className="project-card-icon icon-shape ms-auto icon-md rounded-circle">
 									<i className="ri-arrow-right-up-line" />
@@ -82,15 +80,15 @@ export default function PortfolioFilter() {
 							</div>
 						</div>
 					</div>
-					<div className="filter-item col-lg-6 col-12 ui app">
+					<div className="filter-item col-lg-6 col-12 mobileapp app">
 						<div className="project-item rounded-4 overflow-hidden position-relative p-md-4 p-3 bg-white">
 							<Link href="/work-single">
-								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/img-3.png" alt="infinia" />
+								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/project-3.png" alt="infinia" />
 							</Link>
 							<div className="d-flex align-items-center mt-4">
 								<Link href="/work-single" className="project-card-content">
-									<h3 className="fw-semibold">Interaction Design</h3>
-									<p>HealthTrack Solutions</p>
+									<h3 className="fw-semibold">Mobile App Development</h3>
+									<p>Medicine Delivery App</p>
 								</Link>
 								<Link href="/work-single" className="project-card-icon icon-shape ms-auto icon-md rounded-circle">
 									<i className="ri-arrow-right-up-line" />
@@ -98,15 +96,15 @@ export default function PortfolioFilter() {
 							</div>
 						</div>
 					</div>
-					<div className="filter-item col-lg-6 col-12 app app dataanalysis brand">
+					<div className="filter-item col-lg-6 col-12 app mobileapp dataanalysis brand">
 						<div className="project-item rounded-4 overflow-hidden position-relative p-md-4 p-3 bg-white">
 							<Link href="/work-single">
-								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/img-4.png" alt="infinia" />
+								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/project-4.png" alt="infinia" />
 							</Link>
 							<div className="d-flex align-items-center mt-4">
 								<Link href="/work-single" className="project-card-content">
-									<h3 className="fw-semibold">Design Consultation</h3>
-									<p>Creative Pulse Studios</p>
+									<h3 className="fw-semibold">Mobile App Development</h3>
+									<p>Service Consuming App</p>
 								</Link>
 								<Link href="/work-single" className="project-card-icon icon-shape ms-auto icon-md rounded-circle">
 									<i className="ri-arrow-right-up-line" />

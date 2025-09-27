@@ -23,22 +23,22 @@ export default function Home1() {
 							<p className="text-400 mt-6 mb-3">+ 7 years with professional software development</p>
 							<div className="d-flex gap-3">
 								<div className="brand-logo icon-xl icon-shape rounded-3 bg-900">
-									<img src="/assets/imgs/hero/hero-1/brand-1.png" alt="brand" />
+									<img src="/assets/imgs/home-page-2/hero-1/icon-6.svg" alt="brand" />
 								</div>
 								<div className="brand-logo icon-xl icon-shape rounded-3 bg-900">
-									<img src="/assets/imgs/hero/hero-1/brand-2.png" alt="brand" />
+									<img src="/assets/imgs/home-page-2/hero-1/icon-1.svg" alt="brand" />
 								</div>
 								<div className="brand-logo icon-xl icon-shape rounded-3 bg-900">
-									<img src="/assets/imgs/hero/hero-1/brand-3.png" alt="brand" />
+									<img src="/assets/imgs/home-page-2/hero-1/icon-4.svg" alt="brand" />
 								</div>
 								<div className="brand-logo icon-xl icon-shape rounded-3 bg-900">
-									<img src="/assets/imgs/hero/hero-1/brand-4.png" alt="brand" />
+									<img src="/assets/imgs/home-page-2/hero-1/icon-11.svg" alt="brand" />
 								</div>
 								<div className="brand-logo icon-xl icon-shape rounded-3 bg-900">
-									<img src="/assets/imgs/hero/hero-1/brand-5.png" alt="brand" />
+									<img src="/assets/imgs/home-page-2/hero-1/icon-10.svg" alt="brand" />
 								</div>
 								<div className="brand-logo icon-xl icon-shape rounded-3 bg-900 d-none d-md-flex">
-									<img src=" assets/imgs/hero/hero-1/brand-6.png" alt="brand" />
+									<img src="/assets/imgs/home-page-2/hero-1/icon-5.svg" alt="brand" />
 								</div>
 							</div>
 						</div>

@@ -15,9 +15,7 @@ export default function Projects1() {
 						<div className="col-lg-7 me-auto">
 							<h3 className="ds-3 mt-3 mb-3 text-primary-1">My Latest Works</h3>
 							<span className="fs-5 fw-medium text-200">
-								I believe that working hard and trying to learn every day will
-								<br />
-								make me improve in satisfying my customers.
+								Here are some of the recent projects I’ve worked on, showcasing my skills in web and mobile development.
 							</span>
 						</div>
 						<div className="col-lg-auto">

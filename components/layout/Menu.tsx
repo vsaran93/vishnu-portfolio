@@ -28,7 +28,7 @@ export default function Menu() {
 					</Link>
 				</li> */}
 				<li className="nav-item">
-					<Link href="/blog-list" className={pathname === "/blog-list" ? "nav-link active" : "nav-link"}>
+					<Link href="/#blog" className={pathname === "#blog" ? "nav-link active" : "nav-link"}>
 						Blog
 					</Link>
 				</li>

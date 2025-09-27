@@ -3780,7 +3780,7 @@ textarea.form-control {
   transition: all 0.2s ease-in-out;
 }
 .section-service-1 .single-service-card-1 .service-card-details .service-card-title {
-  font-size: 35px;
+  font-size: 25px;
   font-weight: 600;
   color: var(--tc-neutral-100);
   line-height: 120%;

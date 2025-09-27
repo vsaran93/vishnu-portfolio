@@ -7,7 +7,7 @@ import Projects1 from "@/components/sections/Projects1"
 import Service1 from "@/components/sections/Service1"
 import Skills1 from "@/components/sections/Skills1"
 import Static1 from "@/components/sections/Static1"
-import Resume1 from "@/components/sections/Resume1"
+import ProfessionalJourney from "@/components/sections/ProfessionalJourney"
 import Testimonials1 from "@/components/sections/Testimonials1"
 
 export default function Home() {
@@ -19,9 +19,9 @@ export default function Home() {
 				<Static1 />
 				<Service1 />
 				<Projects1 />
-				<Resume1 />
+				<ProfessionalJourney />
 				<Skills1 />
-				<Brands1 />
+				{/* <Brands1 /> */}
 				<Testimonials1 />
 				<Blog1 />
 				<Contact1 />
