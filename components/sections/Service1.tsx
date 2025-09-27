@@ -5,7 +5,7 @@ export default function Service1() {
 	return (
 		<>
 
-			<section className="section-service-1 pt-120 pb-120">
+			<section id="services" className="section-service-1 pt-120 pb-120">
 				<div className="container">
 					<div className="row align-items-end">
 						<div className="col-lg-7 me-auto">
