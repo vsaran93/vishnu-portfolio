@@ -2,8 +2,10 @@
 import Isotope from "isotope-layout"
 import Link from "next/link"
 import { useCallback, useEffect, useRef, useState } from "react"
+import { useRouter } from "next/router"
 
 export default function PortfolioFilter() {
+	const { basePath } = useRouter();
 	// Isotope
 	const isotope = useRef<Isotope | null>(null)
 	const [filterKey, setFilterKey] = useState<string>("*")
@@ -51,7 +53,7 @@ export default function PortfolioFilter() {
 					<div className="filter-item col-lg-6 col-12 brand webapp app">
 						<div className="project-item rounded-4 overflow-hidden position-relative p-md-4 p-3 bg-white">
 							<Link href="/work-single">
-								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/project-1.png" alt="infinia" />
+								<img className="rounded-3 w-100 zoom-img" src={`${basePath}/assets/imgs/projects/projects-1/project-1.png`} alt="infinia" />
 							</Link>
 							<div className="d-flex align-items-center mt-4">
 								<Link href="/work-single" className="project-card-content">
@@ -67,7 +69,7 @@ export default function PortfolioFilter() {
 					<div className="filter-item col-lg-6 col-12 webapp brand dataanalysis brand">
 						<div className="project-item rounded-4 overflow-hidden position-relative p-md-4 p-3 bg-white">
 							<Link href="/work-single">
-								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/project-2.png" alt="infinia" />
+								<img className="rounded-3 w-100 zoom-img" src={`${basePath}/assets/imgs/projects/projects-1/project-2.png`} alt="infinia" />
 							</Link>
 							<div className="d-flex align-items-center mt-4">
 								<Link href="/work-single" className="project-card-content">
@@ -83,7 +85,7 @@ export default function PortfolioFilter() {
 					<div className="filter-item col-lg-6 col-12 mobileapp app">
 						<div className="project-item rounded-4 overflow-hidden position-relative p-md-4 p-3 bg-white">
 							<Link href="/work-single">
-								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/project-3.png" alt="infinia" />
+								<img className="rounded-3 w-100 zoom-img" src={`${basePath}/assets/imgs/projects/projects-1/project-3.png`} alt="infinia" />
 							</Link>
 							<div className="d-flex align-items-center mt-4">
 								<Link href="/work-single" className="project-card-content">
@@ -99,7 +101,7 @@ export default function PortfolioFilter() {
 					<div className="filter-item col-lg-6 col-12 app mobileapp dataanalysis brand">
 						<div className="project-item rounded-4 overflow-hidden position-relative p-md-4 p-3 bg-white">
 							<Link href="/work-single">
-								<img className="rounded-3 w-100 zoom-img" src="/assets/imgs/projects/projects-1/project-4.png" alt="infinia" />
+								<img className="rounded-3 w-100 zoom-img" src={`${basePath}/assets/imgs/projects/projects-1/project-4.png`} alt="infinia" />
 							</Link>
 							<div className="d-flex align-items-center mt-4">
 								<Link href="/work-single" className="project-card-content">

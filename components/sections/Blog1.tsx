@@ -1,7 +1,9 @@
 
 import Link from "next/link"
+import { useRouter } from "next/router"
 
 export default function Blog1() {
+	const { basePath } = useRouter();
 	return (
 		<>
 
@@ -24,7 +26,7 @@ export default function Blog1() {
 							<div className="blog-card rounded-4 mb-lg-3 mb-md-5 mb-3">
 								<div className="blog-card__image position-relative">
 									<div className="zoom-img rounded-3 overflow-hidden">
-										<img className="w-100" src="/assets/imgs/blog/blog-1/blog-sc.png" alt="" />
+										<img className="w-100" src={`${basePath}/assets/imgs/blog/blog-1/blog-sc.png`} alt="" />
 										<Link className="position-absolute bottom-0 start-0 m-3 text-white-keep btn btn-gradient fw-medium rounded-3 px-3 py-2" href="/blog-details">Development</Link>
 										<Link href="/blog-details" className="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape bg-linear-1 rounded-circle">
 											<i className="ri-arrow-right-up-line text-dark" />
@@ -43,7 +45,7 @@ export default function Blog1() {
 							<div className="blog-card rounded-4 mb-lg-3 mb-md-5 mb-3">
 								<div className="blog-card__image position-relative">
 									<div className="zoom-img rounded-3 overflow-hidden">
-										<img className="w-100" src="/assets/imgs/blog/blog-1/blog2-sc.png" alt="" />
+										<img className="w-100" src={`${basePath}/assets/imgs/blog/blog-1/blog2-sc.png`} alt="" />
 										<Link className="position-absolute bottom-0 start-0 m-3 text-white-keep btn btn-gradient fw-medium rounded-3 px-3 py-2" href="/blog-details">Development</Link>
 										<Link href="/blog-details" className="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape bg-linear-1 rounded-circle">
 											<i className="ri-arrow-right-up-line text-dark" />

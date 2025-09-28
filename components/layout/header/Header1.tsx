@@ -3,8 +3,10 @@ import Link from 'next/link'
 import Menu from '../Menu'
 import MobileMenu from '../MobileMenu'
 import OffCanvas from '../OffCanvas'
+import { useRouter } from 'next/router';
 
 export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isOffCanvas, handleOffCanvas }: any) {
+	const { basePath } = useRouter();
 	return (
 		<>
 			<header>
@@ -14,7 +16,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isOffC
 					</Link>
 					<div className="container py-3 px-0">
 						<Link className="navbar-brand d-flex main-logo align-items-center ms-lg-0 ms-md-5 ms-3" href="/">
-							<img src="/assets/imgs/template/favicon.svg" alt="infinia" />
+							<img src={`${basePath}/assets/imgs/template/favicon.svg`} alt="infinia" />
 							<span className="fs-4 ms-2"></span>
 						</Link>
 						<div className="d-none d-lg-flex">

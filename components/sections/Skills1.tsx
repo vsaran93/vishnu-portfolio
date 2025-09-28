@@ -1,7 +1,10 @@
 'use client'
 import Link from "next/link"
 import CountUp from 'react-countup'
+import { useRouter } from "next/router"
+
 export default function Skills1() {
+	const { basePath } = useRouter();
 	return (
 		<>
 
@@ -18,7 +21,7 @@ export default function Skills1() {
 						<div className="d-flex flex-wrap flex-lg-nowrap justify-content-center gap-3 mb-7 px-6">
 							<div className="skills">
 								<div className="skills-icon mb-5">
-									<img src="/assets/imgs/skills/skills-1/csharp.png" alt="" />
+									<img src={`${basePath}/assets/imgs/skills/skills-1/csharp.png`} alt="" />
 								</div>
 								<div className="skills-ratio text-center">
 									<h3 className="count fw-semibold my-0"><CountUp className="odometer fw-semibold" enableScrollSpy={true} end={90} />%</h3>
@@ -27,7 +30,7 @@ export default function Skills1() {
 							</div>
 							<div className="skills">
 								<div className="skills-icon mb-5">
-									<img src="/assets/imgs/skills/skills-1/net_core.png" alt="" />
+									<img src={`${basePath}/assets/imgs/skills/skills-1/net_core.png`} alt="" />
 								</div>
 								<div className="skills-ratio text-center">
 									<h3 className="count fw-semibold my-0"><CountUp className="odometer fw-semibold" enableScrollSpy={true} end={85} />%</h3>
@@ -36,7 +39,7 @@ export default function Skills1() {
 							</div>
 							<div className="skills">
 								<div className="skills-icon mb-5">
-									<img src="/assets/imgs/skills/skills-1/react.png" alt="" />
+									<img src={`${basePath}/assets/imgs/skills/skills-1/react.png`} alt="" />
 								</div>
 								<div className="skills-ratio text-center">
 									<h3 className="count fw-semibold my-0"><CountUp className="odometer fw-semibold" enableScrollSpy={true} end={90} />%</h3>
@@ -45,7 +48,7 @@ export default function Skills1() {
 							</div>
 							<div className="skills">
 								<div className="skills-icon mb-5">
-									<img src="/assets/imgs/skills/skills-1/node.png" alt="" />
+									<img src={`${basePath}/assets/imgs/skills/skills-1/node.png`} alt="" />
 								</div>
 								<div className="skills-ratio text-center">
 									<h3 className="count fw-semibold my-0"><CountUp className="odometer fw-semibold" enableScrollSpy={true} end={88} />%</h3>
@@ -54,7 +57,7 @@ export default function Skills1() {
 							</div>
 							<div className="skills">
 								<div className="skills-icon mb-5">
-									<img src="/assets/imgs/skills/skills-1/next.png" alt="" />
+									<img src={`${basePath}/assets/imgs/skills/skills-1/next.png`} alt="" />
 								</div>
 								<div className="skills-ratio text-center">
 									<h3 className="count fw-semibold my-0"><CountUp className="odometer fw-semibold" enableScrollSpy={true} end={80} />%</h3>
@@ -63,7 +66,7 @@ export default function Skills1() {
 							</div>
 							<div className="skills">
 								<div className="skills-icon mb-5">
-									<img src="/assets/imgs/skills/skills-1/postgres.png" alt="" />
+									<img src={`${basePath}/assets/imgs/skills/skills-1/postgres.png`} alt="" />
 								</div>
 								<div className="skills-ratio text-center">
 									<h3 className="count fw-semibold my-0"><CountUp className="odometer fw-semibold" enableScrollSpy={true} end={80} />%</h3>
@@ -72,7 +75,7 @@ export default function Skills1() {
 							</div>
 							<div className="skills">
 								<div className="skills-icon mb-5">
-									<img src="/assets/imgs/skills/skills-1/mssql.png" alt="" />
+									<img src={`${basePath}/assets/imgs/skills/skills-1/mssql.png`} alt="" />
 								</div>
 								<div className="skills-ratio text-center">
 									<h3 className="count fw-semibold my-0"><CountUp className="odometer fw-semibold" enableScrollSpy={true} end={95} />%</h3>

@@ -1,6 +1,8 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router';
 
 export default function Footer1() {
+	const { basePath } = useRouter();
 	return (
 		<>
 			<footer>
@@ -8,7 +10,7 @@ export default function Footer1() {
 					<div className="container position-relative z-1">
 						<div className="text-center">
 							<Link className="d-flex main-logo align-items-center d-inline-flex" href="/">
-								<img src="/assets/imgs/footer-1/logo.svg" alt="infinia" />
+								<img src={`${basePath}/assets/imgs/footer-1/logo.svg`} alt="infinia" />
 								<span className="fs-4 ms-2 text-white-keep"></span>
 							</Link>
 							<div className="navigation d-none d-md-flex align-items-center justify-content-center flex-wrap gap-4 my-4">

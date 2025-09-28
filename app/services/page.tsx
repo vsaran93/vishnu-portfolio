@@ -1,8 +1,10 @@
 
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
-export default function Services() {
+import { useRouter } from 'next/router';
 
+export default function Services() {
+	const { basePath } = useRouter();
 	return (
 		<>
 
@@ -42,7 +44,7 @@ export default function Services() {
 														</Link>
 													</div>
 													<div className="card__image-container zoom-img position-relative">
-														<img className="card__image" src="/assets/imgs/services-list/img-1.png" alt="" />
+														<img className="card__image" src={`${basePath}/assets/imgs/services-list/img-1.png`} alt="" />
 														<Link href="/#" className="card-image-overlay position-absolute start-0 end-0 w-100 h-100" />
 													</div>
 													<div className="card__content mt-lg-5 mt-md-4 mt-3 pb-4">
@@ -85,7 +87,7 @@ export default function Services() {
 														</Link>
 													</div>
 													<div className="card__image-container zoom-img position-relative">
-														<img className="card__image" src="/assets/imgs/services-list/img-2.png" alt="" />
+														<img className="card__image" src={`${basePath}/assets/imgs/services-list/img-2.png`} alt="" />
 														<Link href="/#" className="card-image-overlay position-absolute start-0 end-0 w-100 h-100" />
 													</div>
 													<div className="card__content mt-lg-5 mt-md-4 mt-3 pb-4">
@@ -128,7 +130,7 @@ export default function Services() {
 														</Link>
 													</div>
 													<div className="card__image-container zoom-img position-relative">
-														<img className="card__image" src="/assets/imgs/services-list/img-3.png" alt="" />
+														<img className="card__image" src={`${basePath}/assets/imgs/services-list/img-3.png`} alt="" />
 														<Link href="/#" className="card-image-overlay position-absolute start-0 end-0 w-100 h-100" />
 													</div>
 													<div className="card__content mt-lg-5 mt-md-4 mt-3 pb-4">
@@ -171,7 +173,7 @@ export default function Services() {
 														</Link>
 													</div>
 													<div className="card__image-container zoom-img position-relative">
-														<img className="card__image" src="/assets/imgs/services-list/img-4.png" alt="" />
+														<img className="card__image" src={`${basePath}/assets/imgs/services-list/img-4.png`} alt="" />
 														<Link href="/#" className="card-image-overlay position-absolute start-0 end-0 w-100 h-100" />
 													</div>
 													<div className="card__content mt-lg-5 mt-md-4 mt-3 pb-4">

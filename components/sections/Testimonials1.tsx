@@ -2,6 +2,7 @@
 import Link from "next/link"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
+import { useRouter } from "next/router"
 
 const swiperOptions = {
 	modules: [Autoplay, Pagination, Navigation],
@@ -36,6 +37,8 @@ const swiperOptions = {
 }
 
 export default function Testimonials1() {
+	const { basePath } = useRouter();
+
 	return (
 		<>
 
@@ -126,9 +129,9 @@ export default function Testimonials1() {
 					</div>
 				</div>
 				<div className="shape-1 position-absolute bottom-0 start-50 z-1 ms-10 ps-10 d-none d-md-block">
-					<img className="position-relative z-1" src="/assets/imgs/testimonials/testimonials-1/man.png" alt="man" />
+					<img className="position-relative z-1" src={`${basePath}/assets/imgs/testimonials/testimonials-1/man.png`} alt="man" />
 					<div className="position-absolute top-50 start-50 translate-middle z-0 mt-5">
-						<img className="ribbonRotate" src="/assets/imgs/testimonials/testimonials-1/decorate.png" alt="" />
+						<img className="ribbonRotate" src={`${basePath}/assets/imgs/testimonials/testimonials-1/decorate.png`} alt="" />
 					</div>
 				</div>
 			</section>

@@ -1,7 +1,10 @@
 
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import { useRouter } from 'next/router';
+
 export default function BlogDetails() {
+	const { basePath } = useRouter();
 
 	return (
 		<>
@@ -21,7 +24,7 @@ export default function BlogDetails() {
 										</p>
 									</div>
 								</div>
-								<img src="/assets/imgs/blog/blog-1/img-background.png" alt="" />
+								<img src={`${basePath}/assets/imgs/blog/blog-1/img-background.png`} alt="" />
 								<div className="col-lg-10 mx-lg-auto mt-8">
 									<div className="row">
 										<div className="col-lg-9">
@@ -38,10 +41,10 @@ export default function BlogDetails() {
 											<h5 className="fs-5 fw-medium">Offline Access</h5>
 											<p className="text-300">Provide offline capabilities for essential features. Allowing users to access certain functionalities without an internet connection can greatly improve their experience, especially in areas with poor connectivity.</p>
 											<div className="d-flex align-items-center my-6">
-												<img src="/assets/imgs/blog/blog-1/img-10.png" alt="" />
+												<img src={`${basePath}/assets/imgs/blog/blog-1/img-10.png`} alt="" />
 												<div className="d-md-flex flex-column d-none gap-3 ms-3">
-													<img src="/assets/imgs/blog/blog-1/img-11.png" alt="" />
-													<img src="/assets/imgs/blog/blog-1/img-12.png" alt="" />
+													<img src={`${basePath}/assets/imgs/blog/blog-1/img-11.png`} alt="" />
+													<img src={`${basePath}/assets/imgs/blog/blog-1/img-12.png`} alt="" />
 												</div>
 											</div>
 											<h5>Ensure Robust Security</h5>
@@ -114,7 +117,7 @@ export default function BlogDetails() {
 									<div className="blog-card rounded-4 mb-lg-3 mb-md-5 mb-3">
 										<div className="blog-card__image position-relative">
 											<div className="zoom-img rounded-3 overflow-hidden">
-												<img className="w-100" src="/assets/imgs/blog/blog-1/img-1.png" alt="" />
+												<img className="w-100" src={`${basePath}/assets/imgs/blog/blog-1/img-1.png`} alt="" />
 												<Link className="position-absolute bottom-0 start-0 m-3 text-white-keep btn btn-gradient fw-medium rounded-3 px-3 py-2" href="/blog-details">App Design</Link>
 												<Link href="/blog-details" className="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape bg-linear-1 rounded-circle">
 													<i className="ri-arrow-right-up-line text-dark" />
@@ -133,7 +136,7 @@ export default function BlogDetails() {
 									<div className="blog-card rounded-4 mb-lg-3 mb-md-5 mb-3">
 										<div className="blog-card__image position-relative">
 											<div className="zoom-img rounded-3 overflow-hidden">
-												<img className="w-100" src="/assets/imgs/blog/blog-1/img-2.png" alt="" />
+												<img className="w-100" src={`${basePath}/assets/imgs/blog/blog-1/img-2.png`} alt="" />
 												<Link className="position-absolute bottom-0 start-0 m-3 text-white-keep btn btn-gradient fw-medium rounded-3 px-3 py-2" href="/blog-details">App Design</Link>
 												<Link href="/blog-details" className="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape bg-linear-1 rounded-circle">
 													<i className="ri-arrow-right-up-line text-dark" />
@@ -152,7 +155,7 @@ export default function BlogDetails() {
 									<div className="blog-card rounded-4 mb-lg-3 mb-md-5 mb-3">
 										<div className="blog-card__image position-relative">
 											<div className="zoom-img rounded-3 overflow-hidden">
-												<img className="w-100" src="/assets/imgs/blog/blog-1/img-3.png" alt="" />
+												<img className="w-100" src={`${basePath}/assets/imgs/blog/blog-1/img-3.png`} alt="" />
 												<Link className="position-absolute bottom-0 start-0 m-3 text-white-keep btn btn-gradient fw-medium rounded-3 px-3 py-2" href="/blog-details">App Design</Link>
 												<Link href="/blog-details" className="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape bg-linear-1 rounded-circle">
 													<i className="ri-arrow-right-up-line text-dark" />

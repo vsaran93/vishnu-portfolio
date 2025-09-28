@@ -2,15 +2,18 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import PerfectScrollbar from 'react-perfect-scrollbar'
+import { useRouter } from 'next/router';
 
 export default function MobileMenu({ isMobileMenu, handleMobileMenu }: any) {
+	const { basePath } = useRouter();
+
 	return (
 		<>
 			<div className={`mobile-header-active mobile-header-wrapper-style perfect-scrollbar button-bg-2 ${isMobileMenu ? 'sidebar-visible' : ''}`}>
 				<div className="mobile-header-wrapper-inner">
 					<div className="mobile-header-logo">
 						<Link className="d-flex main-logo align-items-center d-inline-flex" href="/">
-							<img src="/assets/imgs/footer-1/logo.svg" alt="infinia" />
+							<img src={`${basePath}/assets/imgs/footer-1/logo.svg`} alt="infinia" />
 							<span className="fs-4 ms-2 text-dark"></span>
 						</Link>
 						<div className={`burger-icon burger-icon-white border rounded-3 ${isMobileMenu ? 'burger-close' : ''}`} onClick={handleMobileMenu}>
