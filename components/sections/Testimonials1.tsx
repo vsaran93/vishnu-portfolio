@@ -2,7 +2,7 @@
 import Link from "next/link"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
-import { usePathname } from "next/navigation"
+import { basePath } from '../../util/config';
 
 const swiperOptions = {
 	modules: [Autoplay, Pagination, Navigation],
@@ -37,10 +37,7 @@ const swiperOptions = {
 }
 
 export default function Testimonials1() {
-	const pathname = usePathname();
-	const basePath = pathname.split('/')[1];
-
-
+	
 	return (
 		<>
 

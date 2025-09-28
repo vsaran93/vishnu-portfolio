@@ -2,12 +2,9 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import PerfectScrollbar from 'react-perfect-scrollbar'
-import { usePathname } from 'next/navigation';
+import { basePath } from '../../util/config';
 
 export default function MobileMenu({ isMobileMenu, handleMobileMenu }: any) {
-	const pathname = usePathname();
-	const basePath = pathname.split('/')[1];
-
 
 	return (
 		<>

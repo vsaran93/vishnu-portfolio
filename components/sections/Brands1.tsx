@@ -1,10 +1,8 @@
 import Marquee from 'react-fast-marquee'
-import { usePathname } from "next/navigation"
+import { basePath } from '../../util/config';
 
 
 export default function Brands1() {
-	const pathname = usePathname();
-	const basePath = pathname.split('/')[1];
 
 	return (
 		<>

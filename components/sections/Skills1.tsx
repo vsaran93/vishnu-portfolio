@@ -1,11 +1,9 @@
 'use client'
 import Link from "next/link"
 import CountUp from 'react-countup'
-import { usePathname } from "next/navigation"
+import { basePath } from '../../util/config'
 
 export default function Skills1() {
-	const pathname = usePathname();
-	const basePath = pathname.split('/')[1];
 
 	return (
 		<>

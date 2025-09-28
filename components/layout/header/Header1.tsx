@@ -3,11 +3,10 @@ import Link from 'next/link'
 import Menu from '../Menu'
 import MobileMenu from '../MobileMenu'
 import OffCanvas from '../OffCanvas'
-import { usePathname } from 'next/navigation';
+import { basePath } from '../../../util/config';
 
 export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isOffCanvas, handleOffCanvas }: any) {
-	const pathname = usePathname();
-	const basePath = pathname.split('/')[1];
+
 
 	return (
 		<>

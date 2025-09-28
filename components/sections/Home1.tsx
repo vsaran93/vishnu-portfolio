@@ -1,12 +1,9 @@
 
 import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { basePath } from '../../util/config';
 
 export default function Home1() {
-	const pathname = usePathname();
-	const basePath = pathname.split('/')[1];
 
-	console.log("base path", basePath);
 	return (
 		<>
 
