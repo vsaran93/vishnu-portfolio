@@ -1,9 +1,11 @@
 
 import Link from "next/link"
-import { useRouter } from "next/router"
+import { usePathname } from "next/navigation"
 
 export default function ProfessionalJourney() {
-	const { basePath } = useRouter();
+	const pathname = usePathname();
+	const basePath = pathname.split('/')[1];
+
 	return (
 		<>
 

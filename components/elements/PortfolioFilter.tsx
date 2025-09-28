@@ -2,10 +2,12 @@
 import Isotope from "isotope-layout"
 import Link from "next/link"
 import { useCallback, useEffect, useRef, useState } from "react"
-import { useRouter } from "next/router"
+import { usePathname } from "next/navigation"
 
 export default function PortfolioFilter() {
-	const { basePath } = useRouter();
+	const pathname = usePathname();
+	const basePath = pathname.split('/')[1];
+
 	// Isotope
 	const isotope = useRef<Isotope | null>(null)
 	const [filterKey, setFilterKey] = useState<string>("*")

@@ -1,10 +1,11 @@
 
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 
 export default function BlogDetails() {
-	const { basePath } = useRouter();
+	const pathname = usePathname();
+	const basePath = pathname.split('/')[1];
 
 	return (
 		<>

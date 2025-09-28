@@ -1,10 +1,12 @@
 'use client'
 import Link from "next/link"
 import CountUp from 'react-countup'
-import { useRouter } from "next/router"
+import { usePathname } from "next/navigation"
 
 export default function Skills1() {
-	const { basePath } = useRouter();
+	const pathname = usePathname();
+	const basePath = pathname.split('/')[1];
+
 	return (
 		<>
 
